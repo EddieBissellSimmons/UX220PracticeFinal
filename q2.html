@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <h1>Tim Berners-Lee</h1>
+        <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">
+            <img crossorigin="anonymous"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Sir_Tim_Berners-Lee_%28cropped%29.jpg" alt="Image of Tim Berners-Lee"/>
+        </a>
+        <h2>The inventor of the world wide web</h2>
+        <dl>
+            <dt>World Wide Web</dt>
+            <dd>Tim founded the world wide web project.</dd>
+            <dt>The First Web Site</dt>
+            <dd>Tim uploaded the first web page on the internet, the site provided details on how to world wide web works.</dd>
+            <dt>First Hypertext Transfer Protocol</dt>
+            <dd>Tim took the idea of hypertext and connected it with TCP and DNS, making the internet. Eventually, making the first hypertext transferportocol.</dd>
+        </dl>
+    </main>
+
+    <footer>
+        Eddie  @ <x-copyright></x-copyright>
+    </footer>
+
+</body>
+
+<script>
+    class CopyR extends HTMLElement{
+        connectedCallback(){
+            this.innerHTML = new Date().getFullYear();
+        }
+    }
+    customElements.define("x-copyright", CopyR);
+</script>
 <!-- rewrite this document with the required content -->
